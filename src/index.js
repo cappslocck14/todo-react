@@ -42,12 +42,7 @@ this.setState({
   ReactDOM.findDOMNode(this.refs.textInput).value = '';
 }
 
-toggleChecked() {
-    // Set the checked property to the opposite of its current value
-    works.update(this.props.task._id, {
-      $set: { checked: !this.props.task.checked },
-    });
-  }
+
 
 delete(e) {
   var index = e.target.getAttribute('data-key');
@@ -64,11 +59,7 @@ handleClick(e){
   console.log(this.refs)
 }
   
-//  renderTasks() {
-//    return this.props.tasks.map((task) => (
-//      <Task key={task._id} task={task} />
-//    ));
-//  }
+
 
  render() {
    
