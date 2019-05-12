@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor(){
     super();
     this.state={
-      works:[]
+      works:JSON.parse(localStorage.getItem('works'))
     };
   }
 
